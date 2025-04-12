@@ -4,15 +4,15 @@ body, h1, h2, h3, p, button {
     padding: 0;
     font-family: Arial, sans-serif;
     color: white;
-}
-
-/* Background & Layout */
-body {
+  }
+  
+  /* Background & Layout */
+  body {
     background: #121212;
-}
-
-/* Top Bar */
-.top-bar {
+  }
+  
+  /* Top Bar */
+  .top-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,30 +24,30 @@ body {
     padding: 1rem 0;
     transition: all 0.3s ease;
     z-index: 1000;
-}
-
-/* Logo Container */
-.logo-container {
+  }
+  
+  /* Logo Container */
+  .logo-container {
     position: absolute;
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.top-bar img {
+  }
+  
+  .top-bar img {
     width: 120px;
     max-width: 100%;
     transition: all 0.3s ease;
-}
-
-/* Navigation */
-nav {
+  }
+  
+  /* Navigation */
+  nav {
     display: flex;
     gap: 1rem;
-}
-
-/* Buttons */
-.nav-btn {
+  }
+  
+  /* Buttons */
+  .nav-btn {
     padding: 0.625rem 1rem;
     font-size: 1rem;
     font-weight: bold;
@@ -57,14 +57,14 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
+  }
+  
+  .nav-btn:hover {
     background: rgba(255, 255, 255, 0.2);
-}
-
-/* Banner */
-.banner1 {
+  }
+  
+  /* Banner */
+  .banner1 {
     position: relative;
     background-image: url('banner1.jpeg');
     background-size: cover;
@@ -76,10 +76,10 @@ nav {
     justify-content: center;
     text-align: center;
     padding: 1rem;
-}
-
-/* Overlay */
-.banner1::before {
+  }
+  
+  /* Overlay */
+  .banner1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -88,40 +88,40 @@ nav {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1;
-}
-
-/* Header Text */
-.banner1 header {
+  }
+  
+  /* Header Text */
+  .banner1 header {
     position: relative;
     z-index: 2;
-}
-
-.banner1 h1 {
+  }
+  
+  .banner1 h1 {
     font-family: 'Pirata One', cursive;
     font-size: clamp(1.5rem, 5vw, 3rem);
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.banner1 h2 {
+  }
+  
+  .banner1 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: clamp(1.25rem, 4vw, 2.25rem);
     color: red;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.banner1 h2 a {
+  }
+  
+  .banner1 h2 a {
     color: red;
     text-decoration: none;
-}
-
-.banner1 h3 {
+  }
+  
+  .banner1 h3 {
     font-size: clamp(1rem, 3vw, 1.5rem);
     color: #ccc;
-}
-
-/* Join Community Button */
-.join-community-btn {
+  }
+  
+  /* Join Community Button */
+  .join-community-btn {
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -135,14 +135,14 @@ nav {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
     z-index: 2;
-}
-
-.join-community-btn:hover {
+  }
+  
+  .join-community-btn:hover {
     transform: translateX(-50%) rotate(-5deg) scale(1.05);
-}
-
-/* Sections */
-.section {
+  }
+  
+  /* Sections */
+  .section {
     padding: 5rem 1rem;
     margin: 3rem auto;
     width: 90%;
@@ -150,98 +150,136 @@ nav {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#about { background: #1e1e1e; }
-#events { background: #282828; }
-#projects { background: #333; }
-#join { background: #3d3d3d; }
-
-.section:hover {
+  }
+  
+  #about { background: #1e1e1e; }
+  #events { background: #282828; }
+  #projects { background: #333; }
+  #join { background: #3d3d3d; }
+  
+  .section:hover {
     transform: scale(1.02);
     box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.1);
-}
-
-/* About Section */
-.about-container {
+  }
+  
+  /* About Section */
+  .about-container {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-}
-
-.images-stack {
+  }
+  
+  .images-stack {
     flex: 0 0 clamp(200px, 30%, 300px);
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.images-stack img {
+  }
+  
+  .images-stack img {
     width: 100%;
     max-width: 100%;
     margin: 0.625rem 0;
     transform: rotate(-5deg);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.images-stack img:nth-child(2) { transform: rotate(5deg); }
-.images-stack img:nth-child(3) { transform: rotate(-3deg); }
-
-.about-text { flex: 1; }
-
-.about-text h3 {
+  }
+  
+  .images-stack img:nth-child(2) { 
+    transform: rotate(5deg); 
+  }
+  
+  .images-stack img:nth-child(3) { 
+    transform: rotate(-3deg); 
+  }
+  
+  .about-text { 
+    flex: 1; 
+  }
+  
+  .about-text h3 {
     color: #ff4081;
     margin-top: 1.25rem;
-}
-
-/* Projects Section */
-.projects-container {
+  }
+  
+  /* Projects Section */
+  .projects-container {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-}
-
-.treasure-wrapper {
+  }
+  
+  .treasure-wrapper {
     flex: 0 0 clamp(150px, 25%, 200px);
     perspective: 1000px;
-}
-
-.treasure-img {
+  }
+  
+  .treasure-img {
     width: 100%;
     max-width: 100%;
     transform: rotateY(0deg);
     transition: transform 0.3s ease;
-}
-
-.treasure-img:hover {
+  }
+  
+  .treasure-img:hover {
     transform: rotateY(15deg);
-}
-
-/* Join Section */
-.join-container {
+  }
+  
+  /* Events Section */
+  .events-container {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .treasure-map-wrapper {
+    flex: 1 1 40%;
+    max-width: 300px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+  
+  .treasure-map-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: rotateY(0deg);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .treasure-map-img:hover {
+    transform: rotateY(15deg) scale(1.1);
+  }
+  
+  .events-text {
+    flex: 1 1 60%;
+  }
+  
+  /* Join Section */
+  .join-container {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-}
-
-.ship-wrapper {
+  }
+  
+  .ship-wrapper {
     flex: 0 0 clamp(150px, 25%, 200px);
     perspective: 1000px;
-}
-
-.ship-img {
+  }
+  
+  .ship-img {
     width: 100%;
     max-width: 100%;
     transform: rotateY(0deg);
     transition: transform 0.3s ease;
-}
-
-.ship-img:hover {
+  }
+  
+  .ship-img:hover {
     transform: rotateY(-15deg);
-}
-
-/* Join Button */
-.join-btn {
+  }
+  
+  .join-btn {
     display: inline-block;
     padding: 0.75rem 1.25rem;
     font-size: 1.125rem;
@@ -254,118 +292,151 @@ nav {
     transition: all 0.3s ease;
     text-decoration: none;
     margin-top: 1.25rem;
-}
-
-.join-btn:hover {
+  }
+  
+  .join-btn:hover {
     background: #e73370;
-}
-
-/* Footer */
-footer {
+  }
+  
+  /* Footer */
+  footer {
     text-align: center;
     padding: 1rem;
     background: black;
-}
-
-/* Shrink Effect for Top Bar */
-.shrink {
+  }
+  
+  /* Footer Social Icons */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icon {
+    font-size: 1.75rem;
+    color: #ccc;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-icon.instagram:hover {
+    color: #E1306C;
+    transform: scale(1.1);
+  }
+  
+  .footer-icon.youtube:hover {
+    color: #FF0000;
+    transform: scale(1.1);
+  }
+  
+  .footer-icon.gmail:hover {
+    color: #D44638;
+    transform: scale(1.1);
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #aaa;
+  }
+  
+  /* Shrink Effect for Top Bar */
+  .shrink {
     padding: 0.5rem 0;
-}
-
-.shrink img { width: 90px; }
-.shrink .nav-btn {
+  }
+  
+  .shrink img { 
+    width: 90px; 
+  }
+  
+  .shrink .nav-btn {
     font-size: 0.875rem;
     padding: 0.375rem 0.625rem;
-}
-
-/* Font Styles */
-h1, h2, h3 { font-family: 'Pirata One', cursive; }
-h1 { font-size: clamp(2rem, 6vw, 3rem); }
-h2 { font-size: clamp(1.5rem, 5vw, 2.25rem); }
-h3 { font-size: clamp(1.25rem, 4vw, 1.5rem); }
-p {
+  }
+  
+  /* Font Styles */
+  h1, h2, h3 {
+    font-family: 'Pirata One', cursive;
+  }
+  
+  h1 { 
+    font-size: clamp(2rem, 6vw, 3rem); 
+  }
+  
+  h2 { 
+    font-size: clamp(1.5rem, 5vw, 2.25rem); 
+  }
+  
+  h3 { 
+    font-size: clamp(1.25rem, 4vw, 1.5rem); 
+  }
+  
+  p {
     font-size: clamp(1rem, 3vw, 1.125rem);
     line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Stack flex containers vertically */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .about-container, .projects-container, .join-container {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+    
     .images-stack, .treasure-wrapper, .ship-wrapper {
-        flex: 0 0 auto;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto 1.25rem;
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 1.25rem;
     }
-
-    /* Adjust navigation */
+    
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
     }
-
+    
     .nav-btn {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.875rem;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
     }
-
+    
     .top-bar {
-        flex-direction: column;
-        padding: 0.5rem 0;
+      flex-direction: column;
+      padding: 0.5rem 0;
     }
-
+    
     .logo-container {
-        position: static;
-        transform: none;
-        margin-bottom: 0.5rem;
+      position: static;
+      transform: none;
+      margin-bottom: 0.5rem;
     }
-
-    /* Banner adjustments */
+    
     .banner1 {
-        height: 50vh;
-        padding: 1rem;
+      height: 50vh;
+      padding: 1rem;
     }
-
+    
     .join-community-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .section {
-        padding: 2rem 1rem;
-        margin: 1.5rem auto;
+      padding: 2rem 1rem;
+      margin: 1.5rem auto;
     }
-
+    
     .join-btn {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
     }
-}
-.events-container {
-    display: flex;
-    align-items: center;
   }
   
-  .treasure-map-wrapper {
-    flex: 0 0 200px;
-    perspective: 1000px;
-    margin-right: 20px;
+  /* Additional styling for the events container */
+  .treasure-map-wrapper, .events-text {
+    margin-top: 1rem;
   }
   
-  .treasure-map-img {
-    width: 100%;
-    transform: rotateY(0deg);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .treasure-map-img:hover {
-    transform: rotateY(15deg) scale(1.1);
-  }
